@@ -10,7 +10,7 @@ namespace Repository.Imp
 
         public ProductRepository(IMongoDatabase database)
         {
-            _productCollection = database.GetCollection<ProductModel>("product");
+            _productCollection = database.GetCollection<ProductModel>("products");
         }
 
         public async Task<ProductModel> Create(ProductModel item)
